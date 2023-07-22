@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
         android:gravity="top"
-        android:hint="Nazwa kontaktu"
+        android:hint="Nazwa"
         android:inputType="textCapSentences|textMultiLine"
         android:lines="4"
         android:textSize="16sp" />
@@ -32,8 +32,8 @@
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
         android:gravity="top"
-        android:hint="Email kontaktu"
-        android:inputType="textCapSentences|textMultiLine"
+        android:hint="Email"
+        android:inputType="textEmailAddress|textWebEmailAddress"
         android:lines="4"
         android:textSize="16sp" />
 
