@@ -36,5 +36,4 @@
         android:inputType="textCapSentences|textMultiLine|textEmailAddress"
         android:lines="4"
         android:textSize="16sp" />
-
 </LinearLayout>
