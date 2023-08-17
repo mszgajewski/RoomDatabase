@@ -91,7 +91,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 contacts.add(contact);
             } while (cursor.moveToNext());
         }
-
         sqLiteDatabase.close();
         return contacts;
     }
