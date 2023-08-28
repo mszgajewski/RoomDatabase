@@ -40,7 +40,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         long id = db.insert(Contact.TABLE_NAME, null, values);
         db.close();
-
         return id;
     }
 

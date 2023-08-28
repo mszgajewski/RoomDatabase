@@ -13,7 +13,7 @@
         android:lineSpacingExtra="10sp"
         android:text="Nowy kontakt"
         android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"/>
 
     <EditText
         android:id="@+id/name"
@@ -24,7 +24,7 @@
         android:hint="Nazwa"
         android:inputType="textCapSentences|textMultiLine"
         android:lines="4"
-        android:textSize="16sp" />
+        android:textSize="16sp"/>
 
     <EditText
         android:id="@+id/email"
@@ -35,5 +35,5 @@
         android:hint="Email"
         android:inputType="textCapSentences|textMultiLine|textEmailAddress"
         android:lines="4"
-        android:textSize="16sp" />
+        android:textSize="16sp"/>
 </LinearLayout>

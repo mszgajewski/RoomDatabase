@@ -17,13 +17,12 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
-            app:popupTheme="@style/Widget.AppCompat.PopupMenu.Overflow" />
-
+            app:popupTheme="@style/Widget.AppCompat.PopupMenu.Overflow"/>
     </com.google.android.material.appbar.AppBarLayout>
 
     <include
         android:id="@+id/include"
-        layout="@layout/content_main" />
+        layout="@layout/content_main"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
@@ -33,7 +32,6 @@
         android:layout_margin="16dp"
         app:srcCompat="@android:drawable/ic_dialog_email"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-         />
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
