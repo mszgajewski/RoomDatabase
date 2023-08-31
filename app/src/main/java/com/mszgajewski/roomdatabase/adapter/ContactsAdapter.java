@@ -33,7 +33,6 @@ public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.MyView
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        
         public TextView name;
         public TextView email;
 
