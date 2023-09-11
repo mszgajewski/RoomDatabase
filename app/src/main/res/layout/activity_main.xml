@@ -16,7 +16,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
+            android:background="@color/purple_500"
             app:popupTheme="@style/Widget.AppCompat.PopupMenu.Overflow"/>
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -33,5 +33,4 @@
         app:srcCompat="@android:drawable/ic_dialog_email"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

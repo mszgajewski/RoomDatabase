@@ -25,11 +25,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int oldVersion, int newVersion) {
         sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + Contact.TABLE_NAME);
-
         onCreate(sqLiteDatabase);
     }
 
     public long insertContact (String name, String email) {
+
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
 

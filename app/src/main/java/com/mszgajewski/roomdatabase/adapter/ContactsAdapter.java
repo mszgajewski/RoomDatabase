@@ -6,13 +6,14 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
 import com.mszgajewski.roomdatabase.MainActivity;
 import com.mszgajewski.roomdatabase.R;
 import com.mszgajewski.roomdatabase.db.entity.Contact;
+
 import java.util.ArrayList;
 
 public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.MyViewHolder> {
-
     private Context context;
     private ArrayList<Contact> contactArrayList;
     private MainActivity mainActivity;
