@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="15dp"
         android:lineSpacingExtra="10sp"
-        android:text="Nowy kontakt"
+        android:text="Dodaj nowy kontakt"
         android:textSize="20sp"
         android:textStyle="bold"/>
 
@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
         android:gravity="top"
-        android:hint="Nazwa"
+        android:hint="Nazwa kontaku"
         android:inputType="textCapSentences|textMultiLine"
         android:lines="4"
         android:textSize="16sp"/>
