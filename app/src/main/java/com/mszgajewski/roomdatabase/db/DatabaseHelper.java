@@ -98,7 +98,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         ContentValues values = new ContentValues();
         values.put(Contact.COLUMN_NAME, contact.getName());
         values.put(Contact.COLUMN_EMAIL, contact.getEmail());
-
         return sqLiteDatabase.update(Contact.TABLE_NAME, values, Contact.COLUMN_ID + " = ? ",
                 new String[]{String.valueOf(contact.getId())});
     }
@@ -107,6 +106,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
         sqLiteDatabase.delete(Contact.TABLE_NAME, Contact.COLUMN_ID+ " = ? ",
                 new String[]{String.valueOf(contact.getId())});
+
         sqLiteDatabase.close();
     }
 }

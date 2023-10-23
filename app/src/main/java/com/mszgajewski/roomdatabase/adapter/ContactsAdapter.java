@@ -4,11 +4,8 @@ import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.mszgajewski.roomdatabase.MainActivity;
 import com.mszgajewski.roomdatabase.R;
 import com.mszgajewski.roomdatabase.db.entity.Contact;
