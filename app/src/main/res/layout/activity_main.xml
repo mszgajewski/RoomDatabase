@@ -16,13 +16,15 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/teal_700"
+            android:background="#3591C3"
             app:popupTheme="@style/Widget.AppCompat.PopupMenu.Overflow"/>
     </com.google.android.material.appbar.AppBarLayout>
 
     <include
         android:id="@+id/include"
-        layout="@layout/content_main"/>
+        layout="@layout/content_main"
+        tools:layout_editor_absoluteX="201dp"
+        tools:layout_editor_absoluteY="-160dp" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
@@ -30,7 +32,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="15dp"
-        app:srcCompat="@android:drawable/ic_dialog_email"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_dialog_email"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>
