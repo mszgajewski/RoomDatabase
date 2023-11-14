@@ -13,15 +13,15 @@
         tools:ignore="MissingConstraints">
 
         <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
+            android:id="@+id/narzędzia"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#3591C3"
+            android:background="#359183"
             app:popupTheme="@style/Widget.AppCompat.PopupMenu.Overflow"/>
     </com.google.android.material.appbar.AppBarLayout>
 
     <include
-        android:id="@+id/include"
+        android:id="@+id/zawartość"
         layout="@layout/content_main"
         tools:layout_editor_absoluteX="201dp"
         tools:layout_editor_absoluteY="-160dp" />

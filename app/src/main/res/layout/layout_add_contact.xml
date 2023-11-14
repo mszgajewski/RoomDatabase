@@ -32,8 +32,8 @@
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
         android:gravity="top"
-        android:hint="Email  kontaktu"
+        android:hint="Email kontaktu"
         android:inputType="textCapSentences|textMultiLine|textEmailAddress"
-        android:lines="4"
+        android:lines="3"
         android:textSize="18sp"/>
 </LinearLayout>

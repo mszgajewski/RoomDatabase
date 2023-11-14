@@ -79,12 +79,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         Cursor cursor = sqLiteDatabase.rawQuery(selectQuery, null);
 
         if (cursor.moveToFirst()){
-            do{
+            do {
                 Contact contact = new Contact();
                 contact.setId(cursor.getInt(cursor.getColumnIndexOrThrow(Contact.COLUMN_ID)));
                 contact.setName(cursor.getString(cursor.getColumnIndexOrThrow(Contact.COLUMN_NAME)));
                 contact.setEmail(cursor.getString(cursor.getColumnIndexOrThrow(Contact.COLUMN_EMAIL)));
-
                 contacts.add(contact);
             } while (cursor.moveToNext());
         }
@@ -92,7 +91,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return contacts;
     }
 
-    public int updateContact(Contact contact){
+    public int updateContact (Contact contact){
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
@@ -104,9 +103,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public void deleteContact(Contact contact) {
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
-        sqLiteDatabase.delete(Contact.TABLE_NAME, Contact.COLUMN_ID+ " = ? ",
+        sqLiteDatabase.delete(Contact.TABLE_NAME, Contact.COLUMN_ID + " = ? ",
                 new String[]{String.valueOf(contact.getId())});
-
         sqLiteDatabase.close();
     }
 }
